@@ -1,0 +1,1760 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AquaShield Waterproofing | APP Membrane & Insutech Specialists</title>
+<meta name="description" content="Specialist waterproofing contractors in Johannesburg. Torch-on APP membrane, Insutech liquid rubber, basement tanking & balcony waterproofing. Buy materials online. 10-year guarantee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============ RESET & TOKENS ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#08192f;
+  --navy-2:#0d2a4a;
+  --navy-3:#123a63;
+  --cyan:#00b4d8;
+  --cyan-d:#0090ad;
+  --amber:#ffb703;
+  --ink:#0e1c2e;
+  --muted:#5b7089;
+  --line:#e3eaf2;
+  --bg:#f5f9fc;
+  --white:#fff;
+  --radius:14px;
+  --shadow:0 10px 30px rgba(8,25,47,.08);
+  --shadow-lg:0 26px 64px rgba(8,25,47,.22);
+  --max:1200px;
+  --ease:cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color:var(--ink);background:var(--white);line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,svg,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 26px;border-radius:60px;font-weight:700;font-size:.94rem;
+  letter-spacing:.01em;cursor:pointer;transition:.28s var(--ease);
+  border:2px solid transparent;white-space:nowrap;
+}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-primary{background:var(--cyan);color:#04222e;box-shadow:0 10px 26px rgba(0,180,216,.35)}
+.btn-primary:hover{background:#00c8ef;transform:translateY(-2px);box-shadow:0 16px 34px rgba(0,180,216,.45)}
+.btn-amber{background:var(--amber);color:#3a2600;box-shadow:0 10px 26px rgba(255,183,3,.35)}
+.btn-amber:hover{background:#ffc733;transform:translateY(-2px)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn-dark:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(6px);background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.7)}
+.btn-outline{border-color:var(--line);color:var(--ink);background:#fff}
+.btn-outline:hover{border-color:var(--cyan);color:var(--cyan-d)}
+.btn-block{width:100%}
+
+/* ============ TOP BAR ============ */
+.topbar{background:var(--navy);color:#9fb6cf;font-size:.8rem;padding:9px 0}
+.topbar .wrap{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.topbar .spacer{flex:1}
+.topbar a{transition:.2s}
+.topbar a:hover{color:var(--cyan)}
+.topbar .dot{width:5px;height:5px;border-radius:50%;background:var(--cyan);flex:none}
+
+/* ============ HEADER ============ */
+header{
+  position:sticky;top:0;z-index:900;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:.3s var(--ease);
+}
+header.scrolled{box-shadow:0 8px 28px rgba(8,25,47,.1)}
+.nav{display:flex;align-items:center;gap:26px;height:74px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.16rem;letter-spacing:-.02em;color:var(--navy)}
+.logo-mark{
+  width:40px;height:40px;border-radius:11px;flex:none;
+  background:linear-gradient(140deg,var(--cyan),var(--navy-3));
+  display:grid;place-items:center;color:#fff;box-shadow:0 6px 16px rgba(0,180,216,.35);
+}
+.logo-mark svg{width:22px;height:22px}
+.logo small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.16em;color:var(--cyan-d);text-transform:uppercase;line-height:1}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{
+  padding:9px 15px;border-radius:9px;font-weight:600;font-size:.9rem;color:#2c425c;transition:.2s;
+}
+.nav-links a:hover{background:var(--bg);color:var(--cyan-d)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.cart-btn{
+  position:relative;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);
+  display:grid;place-items:center;background:#fff;transition:.25s;color:var(--navy);
+}
+.cart-btn:hover{border-color:var(--cyan);color:var(--cyan-d);transform:translateY(-1px)}
+.cart-btn svg{width:20px;height:20px}
+.cart-count{
+  position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;
+  background:var(--amber);color:#3a2600;border-radius:20px;font-size:.7rem;font-weight:800;
+  display:grid;place-items:center;border:2px solid #fff;
+}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);place-items:center}
+.burger span{display:block;width:19px;height:2px;background:var(--navy);border-radius:2px;position:relative}
+.burger span::before,.burger span::after{content:'';position:absolute;left:0;width:19px;height:2px;background:var(--navy);border-radius:2px}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(900px 480px at 78% 18%, rgba(0,180,216,.28), transparent 62%),
+    radial-gradient(700px 500px at 8% 92%, rgba(255,183,3,.13), transparent 60%),
+    linear-gradient(150deg,#050f1e 0%,#08192f 42%,#0d3355 100%);
+  padding:96px 0 110px;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:54px 54px;
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 65% 40%,#000 10%,transparent 78%);
+  mask-image:radial-gradient(ellipse 80% 70% at 65% 40%,#000 10%,transparent 78%);
+}
+.hero::after{
+  content:'';position:absolute;right:-160px;top:-120px;width:620px;height:620px;border-radius:50%;
+  border:1px solid rgba(0,180,216,.18);
+  box-shadow:0 0 0 90px rgba(0,180,216,.045),0 0 0 180px rgba(0,180,216,.025);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:60px;align-items:center}
+.pill{
+  display:inline-flex;align-items:center;gap:9px;padding:8px 17px;border-radius:60px;
+  background:rgba(0,180,216,.14);border:1px solid rgba(0,180,216,.4);
+  color:#7fe4ff;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  margin-bottom:24px;
+}
+.pill .live{width:7px;height:7px;border-radius:50%;background:#25e07a;box-shadow:0 0 0 0 rgba(37,224,122,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(37,224,122,0)}100%{box-shadow:0 0 0 0 rgba(37,224,122,0)}}
+.hero h1{
+  font-size:clamp(2.3rem,4.6vw,3.7rem);line-height:1.07;letter-spacing:-.035em;font-weight:800;margin-bottom:22px;
+}
+.hero h1 em{font-style:normal;color:var(--cyan);position:relative;white-space:nowrap}
+.hero h1 em::after{
+  content:'';position:absolute;left:0;right:0;bottom:4px;height:9px;background:rgba(255,183,3,.28);
+  border-radius:4px;z-index:-1;
+}
+.hero p.lead{font-size:1.09rem;color:#b3c8de;max-width:540px;margin-bottom:34px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.hero-stats{display:flex;gap:34px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(255,255,255,.13)}
+.hero-stats div strong{display:block;font-size:1.85rem;font-weight:800;letter-spacing:-.03em;color:#fff}
+.hero-stats div span{font-size:.78rem;color:#8fa9c4;text-transform:uppercase;letter-spacing:.09em;font-weight:600}
+
+/* Hero visual card */
+.hero-card{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);
+  border-radius:22px;padding:26px;backdrop-filter:blur(12px);box-shadow:var(--shadow-lg);
+}
+.hero-card h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#7fe4ff;margin-bottom:18px;font-weight:700}
+.spec-row{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px dashed rgba(255,255,255,.12)}
+.spec-row:last-of-type{border-bottom:0}
+.spec-ico{
+  width:42px;height:42px;border-radius:12px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(0,180,216,.28),rgba(0,180,216,.08));
+  border:1px solid rgba(0,180,216,.3);color:#7fe4ff;
+}
+.spec-ico svg{width:20px;height:20px}
+.spec-row b{display:block;font-size:.94rem;font-weight:700;color:#fff}
+.spec-row small{color:#8fa9c4;font-size:.79rem}
+.hero-card .btn{margin-top:20px}
+
+/* ============ TRUST STRIP ============ */
+.trust{background:var(--navy-2);color:#cfe0f0;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.trust .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:11px;font-size:.86rem;font-weight:600}
+.trust-item svg{width:20px;height:20px;color:var(--cyan);flex:none}
+
+/* ============ SECTION HEADERS ============ */
+section{padding:88px 0}
+.sec-head{max-width:660px;margin:0 auto 52px;text-align:center}
+.sec-head.left{margin-left:0;text-align:left}
+.eyebrow{
+  display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--cyan-d);margin-bottom:14px;
+  padding-bottom:6px;position:relative;
+}
+.eyebrow::after{content:'';position:absolute;left:0;bottom:0;width:36px;height:3px;background:var(--amber);border-radius:3px}
+.sec-head h2{font-size:clamp(1.85rem,3.3vw,2.6rem);letter-spacing:-.03em;line-height:1.15;font-weight:800;margin-bottom:16px}
+.sec-head p{color:var(--muted);font-size:1.02rem}
+
+/* ============ SERVICES ============ */
+#services{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;
+  transition:.3s var(--ease);position:relative;overflow:hidden;
+}
+.svc::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--cyan),var(--amber));transform:scaleX(0);
+  transform-origin:left;transition:.4s var(--ease);
+}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.svc:hover::before{transform:scaleX(1)}
+.svc-ico{
+  width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:20px;
+  background:linear-gradient(140deg,rgba(0,180,216,.16),rgba(0,180,216,.04));
+  color:var(--cyan-d);border:1px solid rgba(0,180,216,.22);
+}
+.svc-ico svg{width:25px;height:25px}
+.svc h3{font-size:1.1rem;font-weight:800;margin-bottom:9px;letter-spacing:-.015em}
+.svc p{font-size:.9rem;color:var(--muted);margin-bottom:16px}
+.svc ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.svc li{font-size:.84rem;color:#3d5670;display:flex;gap:9px;align-items:flex-start}
+.svc li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--cyan);margin-top:8px;flex:none}
+
+/* ============ VIDEOS ============ */
+#videos{background:#fff}
+.vid-top{display:flex;justify-content:space-between;align-items:flex-end;gap:26px;margin-bottom:38px;flex-wrap:wrap}
+.filters{display:flex;gap:9px;flex-wrap:wrap}
+.chip{
+  padding:8px 17px;border-radius:60px;border:1px solid var(--line);background:#fff;
+  font-size:.83rem;font-weight:700;color:#4a6076;transition:.22s;
+}
+.chip:hover{border-color:var(--cyan);color:var(--cyan-d)}
+.chip.active{background:var(--navy);border-color:var(--navy);color:#fff}
+
+.vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.vcard{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;
+  cursor:pointer;transition:.3s var(--ease);position:relative;
+}
+.vcard:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.vposter{
+  position:relative;aspect-ratio:16/10;display:grid;place-items:center;overflow:hidden;
+}
+.vposter::after{
+  content:'';position:absolute;inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);
+  background-size:26px 26px;
+}
+.poster-1{background:linear-gradient(135deg,#0d3355,#062033 60%,#00b4d8)}
+.poster-2{background:linear-gradient(135deg,#123a63,#08192f 55%,#ffb703)}
+.poster-3{background:linear-gradient(135deg,#0a2b45,#0f4c5c 55%,#00e0b8)}
+.poster-4{background:linear-gradient(135deg,#1b2a41,#0d3355 50%,#4a90d9)}
+.poster-5{background:linear-gradient(135deg,#08304a,#0b5c72 60%,#7fe4ff)}
+.poster-6{background:linear-gradient(135deg,#2a1f0a,#5c3d09 55%,#ffb703)}
+
+.vplay{
+  position:relative;z-index:2;width:64px;height:64px;border-radius:50%;
+  background:rgba(255,255,255,.94);display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);transition:.3s var(--ease);
+}
+.vcard:hover .vplay{transform:scale(1.12);background:var(--cyan)}
+.vplay::after{
+  content:'';margin-left:5px;
+  border-left:17px solid var(--navy);border-top:10px solid transparent;border-bottom:10px solid transparent;
+}
+.vbadge{
+  position:absolute;top:12px;left:12px;z-index:2;padding:5px 12px;border-radius:60px;
+  background:rgba(4,20,34,.72);backdrop-filter:blur(6px);color:#7fe4ff;
+  font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid rgba(127,228,255,.28);
+}
+.vtime{
+  position:absolute;bottom:12px;right:12px;z-index:2;padding:4px 10px;border-radius:6px;
+  background:rgba(4,20,34,.8);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.03em;
+}
+.vdel{
+  position:absolute;top:12px;right:12px;z-index:3;width:28px;height:28px;border-radius:8px;
+  background:rgba(220,50,60,.9);color:#fff;font-size:1rem;line-height:1;display:grid;place-items:center;
+  opacity:0;transition:.2s;
+}
+.vcard:hover .vdel{opacity:1}
+.vbody{padding:18px 20px 20px}
+.vbody h3{font-size:1rem;font-weight:800;letter-spacing:-.015em;margin-bottom:6px;line-height:1.35}
+.vmeta{font-size:.79rem;color:var(--muted);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.vmeta .sep{width:3px;height:3px;border-radius:50%;background:#c3d2e0}
+
+/* Add-video panel */
+.addpanel{
+  display:none;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);
+  padding:30px;margin-bottom:34px;
+}
+.addpanel.open{display:block;animation:slideDown .35s var(--ease)}
+@keyframes slideDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+.addpanel h3{font-size:1.15rem;font-weight:800;margin-bottom:6px}
+.addpanel > p{font-size:.87rem;color:var(--muted);margin-bottom:22px}
+
+/* ============ FORMS ============ */
+.fgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.79rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#3d5670}
+.field input,.field select,.field textarea{
+  padding:13px 15px;border:1.5px solid var(--line);border-radius:11px;background:#fff;
+  font-size:.92rem;transition:.22s;width:100%;
+}
+.field textarea{resize:vertical;min-height:110px;font-family:inherit}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(0,180,216,.13);
+}
+.field input:invalid:not(:placeholder-shown){border-color:#ff8a8a}
+.hint{font-size:.76rem;color:var(--muted)}
+.form-note{
+  display:none;margin-top:18px;padding:15px 18px;border-radius:11px;
+  background:rgba(37,224,122,.1);border:1px solid rgba(37,224,122,.4);color:#0a6b3d;
+  font-size:.9rem;font-weight:600;align-items:center;gap:10px;
+}
+.form-note.show{display:flex}
+.form-note svg{width:19px;height:19px;flex:none}
+
+/* ============ PRODUCTS ============ */
+#products{background:var(--bg)}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.prod{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:.3s var(--ease);position:relative;
+}
+.prod:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.pimg{
+  position:relative;aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden;
+}
+.pimg::after{
+  content:'';position:absolute;inset:0;
+  background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.055) 0 12px,transparent 12px 24px);
+}
+.pimg svg{width:64px;height:64px;color:rgba(255,255,255,.9);position:relative;z-index:2;filter:drop-shadow(0 6px 14px rgba(0,0,0,.3))}
+.pimg-1{background:linear-gradient(135deg,#0d3355,#00b4d8)}
+.pimg-2{background:linear-gradient(135deg,#08192f,#123a63)}
+.pimg-3{background:linear-gradient(135deg,#0f4c5c,#00e0b8)}
+.pimg-4{background:linear-gradient(135deg,#2a1f0a,#ffb703)}
+.pimg-5{background:linear-gradient(135deg,#1b2a41,#4a90d9)}
+.pimg-6{background:linear-gradient(135deg,#3a1f0a,#e07a1f)}
+.pimg-7{background:linear-gradient(135deg,#0a2b45,#7fe4ff)}
+.pimg-8{background:linear-gradient(135deg,#2a0a2e,#a34ecf)}
+.ptag{
+  position:absolute;top:12px;left:12px;z-index:3;padding:5px 11px;border-radius:60px;
+  font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;
+  background:rgba(255,255,255,.93);color:var(--navy);
+}
+.ptag.hot{background:var(--amber);color:#3a2600}
+.pbrand{
+  position:absolute;bottom:12px;right:12px;z-index:3;font-size:.66rem;font-weight:800;
+  letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);
+}
+.pbody{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.pbody h3{font-size:.96rem;font-weight:800;line-height:1.35;letter-spacing:-.01em;margin-bottom:7px}
+.pbody .spec{font-size:.78rem;color:var(--muted);margin-bottom:14px;flex:1}
+.price{display:flex;align-items:baseline;gap:8px;margin-bottom:14px}
+.price b{font-size:1.22rem;font-weight:800;color:var(--navy);letter-spacing:-.02em}
+.price s{font-size:.82rem;color:#9db0c4}
+.price small{font-size:.74rem;color:var(--muted)}
+.pstock{font-size:.74rem;font-weight:700;color:#0a8f52;display:flex;align-items:center;gap:6px;margin-bottom:12px}
+.pstock .dot{width:7px;height:7px;border-radius:50%;background:#25e07a}
+.pstock.low{color:#c47a00}
+.pstock.low .dot{background:var(--amber)}
+
+/* ============ QUOTE SECTION ============ */
+#quote{
+  background:
+    radial-gradient(700px 400px at 85% 12%, rgba(0,180,216,.16), transparent 60%),
+    linear-gradient(160deg,#050f1e,#08192f 55%,#0d2a4a);
+  color:#fff;position:relative;overflow:hidden;
+}
+#quote::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(ellipse 70% 80% at 30% 50%,#000,transparent 75%);
+  mask-image:radial-gradient(ellipse 70% 80% at 30% 50%,#000,transparent 75%);
+}
+.quote-grid{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start}
+.quote-grid .eyebrow{color:var(--cyan)}
+.quote-grid h2{font-size:clamp(1.8rem,3.2vw,2.5rem);letter-spacing:-.03em;line-height:1.15;font-weight:800;margin-bottom:18px}
+.quote-grid > div > p{color:#b3c8de;margin-bottom:30px;font-size:1rem}
+.qlist{list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:32px}
+.qlist li{display:flex;gap:14px;align-items:flex-start;font-size:.92rem;color:#cfe0f0}
+.qlist .tick{
+  width:24px;height:24px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:rgba(0,180,216,.18);border:1px solid rgba(0,180,216,.45);color:#7fe4ff;
+}
+.qlist .tick svg{width:13px;height:13px}
+.contact-mini{display:flex;flex-direction:column;gap:13px;padding-top:26px;border-top:1px solid rgba(255,255,255,.12)}
+.contact-mini a{display:flex;align-items:center;gap:13px;font-size:.93rem;font-weight:600;color:#cfe0f0;transition:.22s}
+.contact-mini a:hover{color:var(--cyan)}
+.contact-mini .ic{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:var(--cyan);
+}
+.contact-mini .ic svg{width:18px;height:18px}
+.quote-form{
+  background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);
+  border-radius:20px;padding:34px;backdrop-filter:blur(12px);box-shadow:var(--shadow-lg);
+}
+.quote-form h3{font-size:1.2rem;font-weight:800;margin-bottom:5px}
+.quote-form > p{font-size:.85rem;color:#9fb6cf;margin-bottom:24px}
+.quote-form .field label{color:#9fb6cf}
+.quote-form .field input,.quote-form .field select,.quote-form .field textarea{
+  background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);color:#fff;
+}
+.quote-form .field input::placeholder,.quote-form .field textarea::placeholder{color:#7b93ad}
+.quote-form .field select option{background:var(--navy-2);color:#fff}
+.quote-form .field input:focus,.quote-form .field select:focus,.quote-form .field textarea:focus{
+  background:rgba(255,255,255,.11);border-color:var(--cyan);box-shadow:0 0 0 4px rgba(0,180,216,.18);
+}
+
+/* ============ TESTIMONIALS ============ */
+#reviews{background:#fff}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{
+  background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;
+  display:flex;flex-direction:column;transition:.3s var(--ease);
+}
+.rev:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent;background:#fff}
+.stars{display:flex;gap:3px;margin-bottom:16px;color:var(--amber)}
+.stars svg{width:17px;height:17px}
+.rev p{font-size:.94rem;color:#33485e;margin-bottom:22px;flex:1;line-height:1.7}
+.rev-who{display:flex;align-items:center;gap:13px;padding-top:18px;border-top:1px solid var(--line)}
+.avatar{
+  width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-weight:800;font-size:.95rem;color:#fff;letter-spacing:.02em;
+}
+.av1{background:linear-gradient(135deg,#0d3355,#00b4d8)}
+.av2{background:linear-gradient(135deg,#5c3d09,#ffb703)}
+.av3{background:linear-gradient(135deg,#0f4c5c,#00e0b8)}
+.rev-who b{display:block;font-size:.9rem;font-weight:800}
+.rev-who small{font-size:.78rem;color:var(--muted)}
+
+/* ============ CTA BANNER ============ */
+.cta-band{
+  background:linear-gradient(120deg,var(--cyan),#0090ad 60%,var(--navy-3));
+  color:#04222e;padding:56px 0;
+}
+.cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.cta-band h2{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:800;letter-spacing:-.03em;line-height:1.2}
+.cta-band p{font-size:.94rem;opacity:.82;margin-top:6px;max-width:520px}
+
+/* ============ FOOTER ============ */
+footer{background:var(--navy);color:#8fa9c4;padding:66px 0 0;font-size:.88rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:44px;padding-bottom:48px}
+footer h4{color:#fff;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:20px;font-weight:800}
+footer .logo{color:#fff;margin-bottom:16px}
+footer .logo small{color:var(--cyan)}
+footer p{line-height:1.75;margin-bottom:20px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+footer ul a{transition:.22s;display:inline-flex;align-items:center;gap:8px}
+footer ul a:hover{color:var(--cyan);transform:translateX(3px)}
+.foot-contact li{display:flex;gap:12px;align-items:flex-start;line-height:1.6}
+.foot-contact svg{width:17px;height:17px;color:var(--cyan);flex:none;margin-top:3px}
+.socials{display:flex;gap:10px;margin-top:22px}
+.socials a{
+  width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);transition:.25s;
+}
+.socials a:hover{background:var(--cyan);color:var(--navy);transform:translateY(-3px);border-color:var(--cyan)}
+.socials svg{width:17px;height:17px}
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:24px 0;
+  display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:.8rem;
+}
+.foot-bottom a:hover{color:var(--cyan)}
+
+/* ============ CART DRAWER ============ */
+.overlay{
+  position:fixed;inset:0;background:rgba(4,14,26,.55);backdrop-filter:blur(3px);
+  opacity:0;visibility:hidden;transition:.3s var(--ease);z-index:1000;
+}
+.overlay.show{opacity:1;visibility:visible}
+.drawer{
+  position:fixed;top:0;right:0;bottom:0;width:min(430px,100%);background:#fff;z-index:1001;
+  transform:translateX(100%);transition:.4s var(--ease);display:flex;flex-direction:column;
+  box-shadow:-20px 0 60px rgba(4,14,26,.3);
+}
+.drawer.show{transform:translateX(0)}
+.drawer-head{
+  display:flex;align-items:center;justify-content:space-between;padding:22px 24px;
+  border-bottom:1px solid var(--line);
+}
+.drawer-head h3{font-size:1.05rem;font-weight:800;display:flex;align-items:center;gap:10px}
+.drawer-head h3 span{
+  background:var(--navy);color:#fff;font-size:.72rem;padding:3px 10px;border-radius:60px;font-weight:700;
+}
+.xbtn{
+  width:36px;height:36px;border-radius:10px;display:grid;place-items:center;
+  border:1px solid var(--line);transition:.22s;font-size:1.2rem;line-height:1;color:var(--muted);
+}
+.xbtn:hover{background:#f4f7fa;color:#c0392b;border-color:#ffc9c9}
+.drawer-body{flex:1;overflow-y:auto;padding:20px 24px}
+.citem{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.citem-img{
+  width:62px;height:62px;border-radius:11px;flex:none;display:grid;place-items:center;color:#fff;
+}
+.citem-img svg{width:26px;height:26px}
+.citem-info{flex:1;min-width:0}
+.citem-info h4{font-size:.88rem;font-weight:800;margin-bottom:3px;line-height:1.3}
+.citem-info .cp{font-size:.8rem;color:var(--muted);margin-bottom:9px}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.qty button{width:29px;height:29px;display:grid;place-items:center;font-size:1rem;font-weight:700;color:var(--navy);transition:.2s}
+.qty button:hover{background:var(--bg);color:var(--cyan-d)}
+.qty span{min-width:32px;text-align:center;font-size:.85rem;font-weight:800}
+.citem-right{display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between}
+.citem-right b{font-size:.92rem;font-weight:800;color:var(--navy);white-space:nowrap}
+.rm{font-size:.74rem;color:#c0392b;font-weight:700;transition:.2s}
+.rm:hover{text-decoration:underline}
+.cart-empty{text-align:center;padding:60px 20px;color:var(--muted)}
+.cart-empty svg{width:56px;height:56px;color:#cfdce8;margin:0 auto 18px}
+.cart-empty h4{font-size:1rem;font-weight:800;color:var(--ink);margin-bottom:7px}
+.cart-empty p{font-size:.85rem;margin-bottom:22px}
+.drawer-foot{border-top:1px solid var(--line);padding:22px 24px;background:var(--bg)}
+.trow{display:flex;justify-content:space-between;font-size:.88rem;color:var(--muted);margin-bottom:9px}
+.trow.grand{
+  font-size:1.15rem;font-weight:800;color:var(--navy);padding-top:13px;
+  border-top:1px dashed #cddbe8;margin-top:13px;margin-bottom:18px;
+}
+.drawer-foot .btn{margin-bottom:10px}
+.drawer-foot .tiny{font-size:.74rem;color:var(--muted);text-align:center;line-height:1.6}
+
+/* ============ VIDEO MODAL ============ */
+.vmodal{
+  position:fixed;inset:0;z-index:1100;display:grid;place-items:center;padding:24px;
+  background:rgba(3,10,20,.9);backdrop-filter:blur(6px);
+  opacity:0;visibility:hidden;transition:.3s var(--ease);
+}
+.vmodal.show{opacity:1;visibility:visible}
+.vmodal-inner{
+  width:min(960px,100%);background:#04101f;border-radius:18px;overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);box-shadow:var(--shadow-lg);
+  transform:scale(.95);transition:.35s var(--ease);
+}
+.vmodal.show .vmodal-inner{transform:scale(1)}
+.vmodal-media{aspect-ratio:16/9;background:#000;position:relative}
+.vmodal-media video,.vmodal-media iframe{width:100%;height:100%;border:0;display:block}
+.vmodal-bar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 22px;color:#fff}
+.vmodal-bar h3{font-size:1rem;font-weight:800;margin-bottom:4px}
+.vmodal-bar p{font-size:.8rem;color:#8fa9c4}
+.vmodal-bar .xbtn{border-color:rgba(255,255,255,.2);color:#cfe0f0;flex:none}
+.vmodal-bar .xbtn:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.4)}
+
+/* ============ TOAST ============ */
+.toast-wrap{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);z-index:1200;display:flex;flex-direction:column;gap:10px;align-items:center;pointer-events:none}
+.toast{
+  background:var(--navy);color:#fff;padding:13px 22px;border-radius:60px;font-size:.86rem;font-weight:700;
+  box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:10px;
+  animation:toastIn .35s var(--ease);border:1px solid rgba(0,180,216,.35);
+}
+.toast svg{width:17px;height:17px;color:var(--cyan);flex:none}
+.toast.out{animation:toastOut .3s var(--ease) forwards}
+@keyframes toastIn{from{opacity:0;transform:translateY(18px) scale(.94)}to{opacity:1;transform:none}}
+@keyframes toastOut{to{opacity:0;transform:translateY(14px) scale(.95)}}
+
+/* ============ WHATSAPP FLOAT ============ */
+.wa-float{
+  position:fixed;bottom:26px;right:26px;z-index:880;width:56px;height:56px;border-radius:50%;
+  background:#25d366;display:grid;place-items:center;color:#fff;
+  box-shadow:0 12px 32px rgba(37,211,102,.45);transition:.3s var(--ease);
+}
+.wa-float:hover{transform:scale(1.09) translateY(-3px);box-shadow:0 18px 40px rgba(37,211,102,.55)}
+.wa-float svg{width:28px;height:28px}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(26px);transition:.7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1080px){
+  .prod-grid{grid-template-columns:repeat(3,1fr)}
+  .hero-inner{grid-template-columns:1fr;gap:44px}
+  .hero-card{max-width:560px}
+}
+@media(max-width:920px){
+  .nav-links{
+    position:fixed;top:74px;left:0;right:0;background:#fff;flex-direction:column;gap:2px;
+    padding:16px 22px 24px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(8,25,47,.12);
+    transform:translateY(-130%);transition:.38s var(--ease);margin-left:0;
+  }
+  .nav-links.open{transform:translateY(0)}
+  .nav-links a{padding:13px 14px;border-radius:10px;font-size:.95rem}
+  .burger{display:grid}
+  .nav-actions .btn-primary{display:none}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .vid-grid{grid-template-columns:repeat(2,1fr)}
+  .rev-grid{grid-template-columns:1fr}
+  .quote-grid{grid-template-columns:1fr;gap:40px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+  .topbar .wrap .hide-sm{display:none}
+}
+@media(max-width:680px){
+  section{padding:64px 0}
+  .hero{padding:70px 0 80px}
+  .svc-grid,.vid-grid,.prod-grid{grid-template-columns:1fr}
+  .prod-grid{max-width:400px;margin:0 auto}
+  .fgrid{grid-template-columns:1fr}
+  .quote-form{padding:24px}
+  .hero-stats{gap:24px}
+  .hero-stats div strong{font-size:1.5rem}
+  .vid-top{flex-direction:column;align-items:stretch}
+  .vid-top .btn{width:100%}
+  .cta-band .wrap{flex-direction:column;text-align:center}
+  .cta-band .btn{width:100%}
+  .foot-grid{grid-template-columns:1fr;gap:32px}
+  .wa-float{width:50px;height:50px;bottom:18px;right:18px}
+  .wa-float svg{width:24px;height:24px}
+  .topbar{font-size:.74rem}
+  .topbar .wrap{gap:12px;justify-content:center;text-align:center}
+  .topbar .spacer{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════ TOP BAR ══════════ -->
+<div class="topbar">
+  <div class="wrap">
+    <span>📍 42 Vulcan Street, Isando, Johannesburg</span>
+    <span class="dot hide-sm"></span>
+    <span class="hide-sm">Mon–Fri 07:00–17:00 · Sat 08:00–13:00</span>
+    <span class="spacer"></span>
+    <a href="tel:+27110000000">📞 011 000 0000</a>
+    <span class="dot hide-sm"></span>
+    <a href="mailto:quotes@aquashield.co.za">✉ quotes@aquashield.co.za</a>
+  </div>
+</div>
+
+<!-- ══════════ HEADER ══════════ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2.5c0 0-7 8.2-7 12.5a7 7 0 0 0 14 0c0-4.3-7-12.5-7-12.5z"/>
+        </svg>
+      </span>
+      <span>AquaShield<small>Waterproofing</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#videos">Our Work</a>
+      <a href="#products">Shop Materials</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a href="#quote" class="btn btn-primary">Free Quote</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="pill"><span class="live"></span> SANS 10021 Compliant · 10-Year Guarantee</span>
+      <h1>Waterproofing that <em>actually</em> lasts.</h1>
+      <p class="lead">
+        Torch-on APP membrane, Insutech liquid rubber and full basement tanking —
+        installed by registered specialists across Gauteng. We fix leaks first time,
+        and we show you the proof on video.
+      </p>
+      <div class="hero-cta">
+        <a href="#quote" class="btn btn-amber">
+          Get a Free Site Assessment
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#videos" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Watch Our Work
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div><strong data-count="1840" data-suffix="+">0</strong><span>Roofs Sealed</span></div>
+        <div><strong data-count="18" data-suffix=" yrs">0</strong><span>In Business</span></div>
+        <div><strong data-count="10" data-suffix=" yr">0</strong><span>Guarantee</span></div>
+        <div><strong data-count="100" data-suffix="%">0</strong><span>Leak-Free Record</span></div>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <h4>Why Contractors Choose Us</h4>
+      <div class="spec-row">
+        <span class="spec-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 20 5v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5z"/></svg>
+        </span>
+        <div><b>Certified APP Applicators</b><small>Torch-on membrane to SANS 10021</small></div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s-7 8.2-7 12.5a7 7 0 0 0 14 0c0-4.3-7-12.5-7-12.5z"/></svg>
+        </span>
+        <div><b>Insutech Approved Installer</b><small>Full manufacturer-backed warranty</small></div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </span>
+        <div><b>Video Proof of Every Job</b><small>See the work before you pay</small></div>
+      </div>
+      <a href="#products" class="btn btn-primary btn-block">Buy Materials Online</a>
+    </aside>
+  </div>
+</section>
+
+<!-- ══════════ TRUST STRIP ══════════ -->
+<div class="trust">
+  <div class="wrap">
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 20 5v6c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V5z"/><path d="m9 12 2 2 4-4"/></svg>
+      Manufacturer-Backed Warranty
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      Same-Week Site Visits
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      Free Moisture Survey
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20"/></svg>
+      Nationwide Material Delivery
+    </span>
+  </div>
+</div>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Specialist waterproofing services</h2>
+      <p>From a leaking concrete roof slab to a full basement tanking system — we spec, supply and install.</p>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 10v10h14V10"/></svg>
+        </span>
+        <h3>Torch-On APP Membrane</h3>
+        <p>Heat-fused bituminous membrane for flat concrete roofs and parapets.</p>
+        <ul>
+          <li>3mm &amp; 4mm APP / SBS membrane</li>
+          <li>Mineral &amp; polyester-reinforced</li>
+          <li>Full torch-weld seams, no cold laps</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s-7 8.2-7 12.5a7 7 0 0 0 14 0c0-4.3-7-12.5-7-12.5z"/></svg>
+        </span>
+        <h3>Insutech Liquid Rubber</h3>
+        <p>Seamless, cold-applied elastomeric coating for complex details.</p>
+        <ul>
+          <li>Bridges cracks up to 2mm</li>
+          <li>UV stable &amp; ponding rated</li>
+          <li>Perfect for planters and box gutters</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+        </span>
+        <h3>Basement &amp; Cellar Tanking</h3>
+        <p>Positive and negative-side waterproofing for below-ground structures.</p>
+        <ul>
+          <li>Cementitious tanking slurries</li>
+          <li>Cavity drain &amp; sump systems</li>
+          <li>Construction joint treatment</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V9l8-6 8 6v11"/><path d="M9 20v-6h6v6"/></svg>
+        </span>
+        <h3>Balcony &amp; Patio Sealing</h3>
+        <p>Screeds, tiling and trafficable coatings that keep water out for good.</p>
+        <ul>
+          <li>Falls corrected to 1:80</li>
+          <li>Tile-on waterproofing systems</li>
+          <li>Threshold &amp; door-sill flashing</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 8h14"/><path d="M7 8c0 4-3 5-3 8a3 3 0 0 0 6 0c0-3-3-4-3-8z"/><path d="M17 8c0 4-3 5-3 8a3 3 0 0 0 6 0c0-3-3-4-3-8z"/></svg>
+        </span>
+        <h3>Leak Detection &amp; Repairs</h3>
+        <p>Thermal imaging and moisture mapping to find the source, not just the stain.</p>
+        <ul>
+          <li>Infrared moisture survey</li>
+          <li>Epoxy &amp; PU crack injection</li>
+          <li>Honest written diagnosis</li>
+        </ul>
+      </article>
+
+      <article class="svc reveal">
+        <span class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v13H3z"/><path d="M3 7l3-4h12l3 4"/><path d="M12 11v5"/></svg>
+        </span>
+        <h3>Roof Restoration &amp; Painting</h3>
+        <p>Full sheeting, sealing and reflective coating systems for IBR and corrugated roofs.</p>
+        <ul>
+          <li>Rust conversion &amp; primer</li>
+          <li>Acrylic &amp; alu-rubber coatings</li>
+          <li>Fastener &amp; lap seal treatment</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VIDEO GALLERY ══════════ -->
+<section id="videos">
+  <div class="wrap">
+    <div class="vid-top">
+      <div class="sec-head left reveal" style="margin-bottom:0">
+        <span class="eyebrow">Our Work On Camera</span>
+        <h2>Job videos &amp; project proof</h2>
+        <p style="max-width:520px">Every installation is filmed. Browse real projects, then post your own site footage for a free technical opinion.</p>
+      </div>
+      <button class="btn btn-dark" id="toggleAdd">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        Post a Video
+      </button>
+    </div>
+
+    <!-- Add video panel -->
+    <div class="addpanel" id="addPanel">
+      <h3>Post a project video</h3>
+      <p>Paste a YouTube, Vimeo or direct .mp4 link. Your clip is saved in this browser and appears in the gallery instantly.</p>
+      <form id="videoForm" novalidate>
+        <div class="fgrid">
+          <div class="field">
+            <label for="vTitle">Video title *</label>
+            <input type="text" id="vTitle" placeholder="e.g. Torch-on APP install – Randburg warehouse" required>
+          </div>
+          <div class="field">
+            <label for="vUrl">Video URL *</label>
+            <input type="url" id="vUrl" placeholder="https://youtube.com/watch?v=... or https://site.com/clip.mp4" required>
+          </div>
+          <div class="field">
+            <label for="vLocation">Location / site</label>
+            <input type="text" id="vLocation" placeholder="e.g. Randburg, Gauteng">
+          </div>
+          <div class="field">
+            <label for="vCat">Category</label>
+            <select id="vCat">
+              <option>Roofing</option>
+              <option>Basement</option>
+              <option>Balcony</option>
+              <option>Repairs</option>
+              <option>Materials</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="vDesc">Short description</label>
+            <textarea id="vDesc" placeholder="What was the problem and how was it solved?" style="min-height:80px"></textarea>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;margin-top:18px;flex-wrap:wrap">
+          <button type="submit" class="btn btn-primary">Publish Video</button>
+          <button type="button" class="btn btn-outline" id="cancelAdd">Cancel</button>
+        </div>
+        <div class="form-note" id="videoNote">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          <span>Video published to the gallery below.</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters" id="vidFilters" style="margin-bottom:28px">
+      <button class="chip active" data-cat="All">All Videos</button>
+      <button class="chip" data-cat="Roofing">Roofing</button>
+      <button class="chip" data-cat="Basement">Basement</button>
+      <button class="chip" data-cat="Balcony">Balcony</button>
+      <button class="chip" data-cat="Repairs">Repairs</button>
+      <button class="chip" data-cat="Materials">Materials</button>
+    </div>
+
+    <div class="vid-grid" id="vidGrid"></div>
+
+    <p id="noVids" style="display:none;text-align:center;color:var(--muted);padding:50px 0;font-size:.95rem">
+      No videos in this category yet. Be the first to post one.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ PRODUCTS ══════════ -->
+<section id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Buy Materials</span>
+      <h2>APP Membrane &amp; Insutech products</h2>
+      <p>Trade prices on genuine Insutech and APP waterproofing systems. Nationwide courier, or collect free from our Isando yard.</p>
+    </div>
+
+    <div class="filters" id="prodFilters" style="justify-content:center;margin-bottom:36px">
+      <button class="chip active" data-cat="All">All Products</button>
+      <button class="chip" data-cat="Membrane">APP Membrane</button>
+      <button class="chip" data-cat="Liquid">Liquid Systems</button>
+      <button class="chip" data-cat="Primer">Primers</button>
+      <button class="chip" data-cat="Accessories">Accessories</button>
+    </div>
+
+    <div class="prod-grid" id="prodGrid"></div>
+  </div>
+</section>
+
+<!-- ══════════ QUOTE ══════════ -->
+<section id="quote">
+  <div class="wrap quote-grid">
+    <div class="reveal">
+      <span class="eyebrow">Free Assessment</span>
+      <h2>Get a fixed price for your waterproofing job</h2>
+      <p>Tell us about the leak. We'll arrange a free site visit, run a moisture survey, and send you a written quote with a materials spec — no obligation, no call-out fee within 60km of Johannesburg.</p>
+
+      <ul class="qlist">
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Free on-site moisture survey &amp; written report</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Itemised quote — labour, membrane &amp; primer split out</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> 10-year workmanship guarantee on membrane systems</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Photos &amp; video of the finished job on handover</li>
+      </ul>
+
+      <div class="contact-mini">
+        <a href="tel:+27110000000">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+          011 000 0000 / 082 000 0000
+        </a>
+        <a href="mailto:quotes@aquashield.co.za">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></span>
+          quotes@aquashield.co.za
+        </a>
+        <a href="#contact">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          42 Vulcan Street, Isando, JHB
+        </a>
+      </div>
+    </div>
+
+    <form class="quote-form reveal" id="quoteForm" novalidate>
+      <h3>Request your free quote</h3>
+      <p>We reply to every enquiry within one working day.</p>
+
+      <div class="fgrid">
+        <div class="field">
+          <label for="qName">Full name *</label>
+          <input type="text" id="qName" placeholder="Thabo Mokoena" required>
+        </div>
+        <div class="field">
+          <label for="qPhone">Phone *</label>
+          <input type="tel" id="qPhone" placeholder="082 123 4567" required>
+        </div>
+        <div class="field full">
+          <label for="qEmail">Email address *</label>
+          <input type="email" id="qEmail" placeholder="you@company.co.za" required>
+        </div>
+        <div class="field">
+          <label for="qProperty">Property type</label>
+          <select id="qProperty">
+            <option>Residential home</option>
+            <option>Sectional title / body corporate</option>
+            <option>Commercial building</option>
+            <option>Industrial warehouse</option>
+            <option>New construction</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qService">Service needed</label>
+          <select id="qService">
+            <option>Torch-on APP membrane</option>
+            <option>Insutech liquid rubber</option>
+            <option>Basement / cellar tanking</option>
+            <option>Balcony &amp; patio sealing</option>
+            <option>Leak detection &amp; repair</option>
+            <option>Roof restoration &amp; coating</option>
+            <option>Material supply only</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="qMsg">Describe the problem *</label>
+          <textarea id="qMsg" placeholder="e.g. Water stains on the ceiling below a 120m² concrete roof slab. Leak appears after heavy rain, worst near the north parapet." required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-amber btn-block" style="margin-top:20px">
+        Send My Free Quote Request
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+
+      <div class="form-note" id="quoteNote">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        <span>Thank you! Your request has been logged — our estimator will call you within one working day.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════ REVIEWS ══════════ -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Client Feedback</span>
+      <h2>Rated 4.9 by Gauteng property owners</h2>
+      <p>Real reviews from body corporates, developers and homeowners we've worked with.</p>
+    </div>
+
+    <div class="rev-grid">
+      <article class="rev reveal">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+        </div>
+        <p>"Our 3rd-floor units had been leaking for two winters. AquaShield stripped the old membrane, re-screeded the falls and torched on new 4mm APP. Two summers later — bone dry. They even sent us video of the seams before closing up."</p>
+        <div class="rev-who">
+          <span class="avatar av1">NM</span>
+          <div><b>Nomsa Mahlangu</b><small>Trustee · Sandown Ridge Body Corporate</small></div>
+        </div>
+      </article>
+
+      <article class="rev reveal">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+        </div>
+        <p>"We buy Insutech liquid rubber and APP membrane from AquaShield every month for our own sites. Stock is always available, pricing is sharp, and delivery to site happens when they say it will. Rare in this industry."</p>
+        <div class="rev-who">
+          <span class="avatar av2">PK</span>
+          <div><b>Pieter Kruger</b><small>Site Manager · Kruger Bouers</small></div>
+        </div>
+      </article>
+
+      <article class="rev reveal">
+        <div class="stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9z"/></svg>
+        </div>
+        <p>"Basement was taking in water every rainy season. They diagnosed a failed construction joint, injected it and tanked the wall. Clean, tidy team and a proper written guarantee. Highly recommended."</p>
+        <div class="rev-who">
+          <span class="avatar av3">RS</span>
+          <div><b>Riya Singh</b><small>Homeowner · Centurion</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA BAND ══════════ -->
+<div class="cta-band">
+  <div class="wrap">
+    <div>
+      <h2>Leaking roof? Don't wait for the next storm.</h2>
+      <p>Book a free moisture survey this week and get a fixed, itemised quote within 48 hours.</p>
+    </div>
+    <a href="#quote" class="btn btn-dark">Book Free Survey</a>
+  </div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.5c0 0-7 8.2-7 12.5a7 7 0 0 0 14 0c0-4.3-7-12.5-7-12.5z"/>
+            </svg>
+          </span>
+          <span>AquaShield<small>Waterproofing</small></span>
+        </a>
+        <p>Registered waterproofing specialists and Insutech-approved material suppliers, serving Gauteng since 2008. CIDB registered · SANS 10021 compliant.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3.5-.4-5.2a2.7 2.7 0 0 0-1.9-1.9C18 4.5 12 4.5 12 4.5s-6 0-7.7.4a2.7 2.7 0 0 0-1.9 1.9C2 8.5 2 12 2 12s0 3.5.4 5.2a2.7 2.7 0 0 0 1.9 1.9c1.7.4 7.7.4 7.7.4s6 0 7.7-.4a2.7 2.7 0 0 0 1.9-1.9C22 15.5 22 12 22 12zM10 15V9l5 3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.4 8.65 22 11 22 14.1V21h-4v-6.1c0-1.45-.03-3.3-2-3.3s-2.3 1.57-2.3 3.2V21h-4z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Torch-On APP Membrane</a></li>
+          <li><a href="#services">Insutech Liquid Rubber</a></li>
+          <li><a href="#services">Basement Tanking</a></li>
+          <li><a href="#services">Balcony Sealing</a></li>
+          <li><a href="#services">Leak Detection</a></li>
+          <li><a href="#services">Roof Restoration</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#products">APP Membrane Rolls</a></li>
+          <li><a href="#products">Insutech Products</a></li>
+          <li><a href="#products">Primers &amp; Sealants</a></li>
+          <li><a href="#products">Flashing &amp; Tapes</a></li>
+          <li><a href="#videos">Project Videos</a></li>
+          <li><a href="#quote">Trade Accounts</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <ul class="foot-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>42 Vulcan Street, Isando<br>Johannesburg, 1600</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <span><a href="tel:+27110000000">011 000 0000</a><br><a href="tel:+27820000000">082 000 0000</a></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <span><a href="mailto:quotes@aquashield.co.za">quotes@aquashield.co.za</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> AquaShield Waterproofing (Pty) Ltd. Reg 2008/123456/07. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Sale</a> · <a href="#">Warranty Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════ CART DRAWER ══════════ -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h3>Your Cart <span id="drawerCount">0</span></h3>
+    <button class="xbtn" id="closeCart" aria-label="Close cart">✕</button>
+  </div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="drawer-foot" id="cartFoot" style="display:none">
+    <div class="trow"><span>Subtotal</span><span id="subtotal">R0.00</span></div>
+    <div class="trow"><span>Delivery (est.)</span><span id="shipping">R0.00</span></div>
+    <div class="trow grand"><span>Total</span><span id="grandTotal">R0.00</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">
+      Checkout on WhatsApp
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.2-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2c.1.2.1.4 0 .5l-.4.5c-.1.1-.3.3-.1.6.1.3.6 1.1 1.3 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.4z"/></svg>
+    </button>
+    <button class="btn btn-outline btn-block" id="clearCart">Clear Cart</button>
+    <p class="tiny">Free collection from Isando. Nationwide courier quoted at checkout. Trade pricing available on orders over R15 000.</p>
+  </div>
+</aside>
+
+<!-- ══════════ VIDEO MODAL ══════════ -->
+<div class="vmodal" id="vModal">
+  <div class="vmodal-inner">
+    <div class="vmodal-media" id="vModalMedia"></div>
+    <div class="vmodal-bar">
+      <div>
+        <h3 id="vModalTitle">Video</h3>
+        <p id="vModalMeta">—</p>
+      </div>
+      <button class="xbtn" id="closeModal" aria-label="Close video">✕</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ WHATSAPP FLOAT ══════════ -->
+<a class="wa-float" href="https://wa.me/27820000000?text=Hi%20AquaShield%2C%20I%27d%20like%20a%20waterproofing%20quote." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.2-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.9 2c.1.2.1.4 0 .5l-.4.5c-.1.1-.3.3-.1.6.1.3.6 1.1 1.3 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.2.1.7-.1 1.4z"/></svg>
+</a>
+
+<!-- ══════════ TOASTS ══════════ -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script>
+/* ═══════════════════════════════════════════
+   0. HELPERS
+   ═══════════════════════════════════════════ */
+const $  = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+
+const store = {
+  get(k, fb) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fb; } catch { return fb; } },
+  set(k, v)  { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} }
+};
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, m =>
+  ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
+
+const money = n => 'R' + Number(n).toLocaleString('en-ZA', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+function toast(msg, icon = 'check') {
+  const wrap = $('#toastWrap');
+  const el = document.createElement('div');
+  el.className = 'toast';
+  const icons = {
+    check: '<path d="M20 6 9 17l-5-5"/>',
+    cart:  '<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>',
+    play:  '<path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/>'
+  };
+  el.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">${icons[icon] || icons.check}</svg>
+                  <span>${esc(msg)}</span>`;
+  wrap.appendChild(el);
+  setTimeout(() => { el.classList.add('out'); setTimeout(() => el.remove(), 320); }, 2800);
+}
+
+/* ═══════════════════════════════════════════
+   1. HEADER / NAV
+   ═══════════════════════════════════════════ */
+const header = $('#header');
+addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 12));
+
+const navLinks = $('#navLinks');
+$('#burger').addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.addEventListener('click', e => { if (e.target.tagName === 'A') navLinks.classList.remove('open'); });
+
+$('#year').textContent = new Date().getFullYear();
+
+/* ═══════════════════════════════════════════
+   2. SCROLL REVEAL + COUNTERS
+   ═══════════════════════════════════════════ */
+const revealIO = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('in'), i * 70);
+      revealIO.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+
+function observeReveals() {
+  $$('.reveal:not(.in)').forEach(el => revealIO.observe(el));
+}
+observeReveals();
+
+const countIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    const target = +el.dataset.count;
+    const suffix = el.dataset.suffix || '';
+    const dur = 1500;
+    const start = performance.now();
+    (function step(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString('en-ZA') + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString('en-ZA') + suffix;
+    })(start);
+    countIO.unobserve(el);
+  });
+}, { threshold: 0.6 });
+
+$$('[data-count]').forEach(el => countIO.observe(el));
+
+/* ═══════════════════════════════════════════
+   3. VIDEO GALLERY
+   ═══════════════════════════════════════════ */
+const DEFAULT_VIDEOS = [
+  {
+    id: 'v1',
+    title: 'Torch-on APP membrane — Sandton office block',
+    location: 'Sandton, Gauteng',
+    cat: 'Roofing',
+    duration: '4:12',
+    poster: 'poster-1',
+    desc: 'Complete strip and re-cover of a 640m² concrete roof slab using 4mm Insutech APP membrane.',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    type: 'file',
+    custom: false
+  },
+  {
+    id: 'v2',
+    title: 'Basement tanking & sump installation — Centurion',
+    location: 'Centurion, Gauteng',
+    cat: 'Basement',
+    duration: '6:38',
+    poster: 'poster-2',
+    desc: 'Negative-side cementitious tanking with a cavity drain and twin-pump sump system.',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    type: 'file',
+    custom: false
+  },
+  {
+    id: 'v3',
+    title: 'Balcony waterproofing with Insutech liquid rubber',
+    location: 'Fourways, Gauteng',
+    cat: 'Balcony',
+    duration: '3:05',
+    poster: 'poster-3',
+    desc: 'Falls corrected, fillet applied and two-coat Insutech liquid rubber system installed.',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+    type: 'file',
+    custom: false
+  },
+  {
+    id: 'v4',
+    title: 'Parapet & flashing detail — Kempton Park warehouse',
+    location: 'Kempton Park, Gauteng',
+    cat: 'Roofing',
+    duration: '5:21',
+    poster: 'poster-4',
+    desc: 'Why 80% of roof leaks start at the parapet — and how we detail it properly.',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+    type: 'file',
+    custom: false
+  },
+  {
+    id: 'v5',
+    title: 'Crack injection & leak repair — Midrand',
+    location: 'Midrand, Gauteng',
+    cat: 'Repairs',
+    duration: '2:47',
+    poster: 'poster-5',
+    desc: 'PU resin injection into a live basement crack, sealed and pressure tested.',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+    type: 'file',
+    custom: false
+  },
+  {
+    id: 'v6',
+    title: 'Unboxing: Insutech APP membrane roll & primer',
+    location: 'Isando Yard, JHB',
+    cat: 'Materials',
+    duration: '1:58',
+    poster: 'poster-6',
+    desc: 'What you get in a standard 10m² APP membrane roll and how to store it correctly.',
+    url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+    type: 'file',
+    custom: false
+  }
+];
+
+let videos = [...DEFAULT_VIDEOS, ...store.get('as_videos', [])];
+let vidFilter = 'All';
+
+function parseVideo(url) {
+  const yt = url.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{11})/);
+  if (yt) return { type: 'youtube', src: `https://www.youtube.com/embed/${yt[1]}?autoplay=1&rel=0` };
+  const vm = url.match(/vimeo\.com\/(\d+)/);
+  if (vm) return { type: 'vimeo', src: `https://player.vimeo.com/video/${vm[1]}?autoplay=1` };
+  return { type: 'file', src: url };
+}
+
+function renderVideos() {
+  const grid = $('#vidGrid');
+  const list = vidFilter === 'All' ? videos : videos.filter(v => v.cat === vidFilter);
+
+  $('#noVids').style.display = list.length ? 'none' : 'block';
+
+  grid.innerHTML = list.map(v => {
+    const i = videos.indexOf(v);
+    return `
+      <article class="vcard" data-i="${i}">
+        <div class="vposter ${v.poster}">
+          <span class="vbadge">${esc(v.cat)}</span>
+          ${v.custom ? `<button class="vdel" data-del="${i}" title="Remove video">✕</button>` : ''}
+          <span class="vplay"></span>
+          <span class="vtime">${esc(v.duration || 'New')}</span>
+        </div>
+        <div class="vbody">
+          <h3>${esc(v.title)}</h3>
+          <p class="vmeta">
+            <span>${esc(v.location || 'Gauteng')}</span>
+            <span class="sep"></span>
+            <span>${esc(v.cat)}</span>
+          </p>
+        </div>
+      </article>`;
+  }).join('');
+}
+
+$('#vidGrid').addEventListener('click', e => {
+  const del = e.target.closest('[data-del]');
+  if (del) {
+    e.stopPropagation();
+    const i = +del.dataset.del;
+    const removed = videos[i];
+    videos.splice(i, 1);
+    store.set('as_videos', videos.filter(v => v.custom));
+    renderVideos();
+    toast('Video removed from gallery');
+    return;
+  }
+  const card = e.target.closest('.vcard');
+  if (card) openVideo(+card.dataset.i);
+});
+
+$('#vidFilters').addEventListener('click', e => {
+  const chip = e.target.closest('.chip');
+  if (!chip) return;
+  $$('#vidFilters .chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  vidFilter = chip.dataset.cat;
+  renderVideos();
+});
+
+/* ---- Video modal ---- */
+const vModal = $('#vModal');
+const vModalMedia = $('#vModalMedia');
+
+function openVideo(i) {
+  const v = videos[i];
+  if (!v) return;
+  const src = parseVideo(v.url);
+
+  vModalMedia.innerHTML = src.type === 'file'
+    ? `<video src="${esc(src.src)}" controls autoplay playsinline></video>`
+    : `<iframe src="${esc(src.src)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+
+  $('#vModalTitle').textContent = v.title;
+  $('#vModalMeta').textContent = [v.location, v.cat, v.duration].filter(Boolean).join('  ·  ');
+  vModal.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideo() {
+  vModal.classList.remove('show');
+  vModalMedia.innerHTML = '';
+  document.body.style.overflow = '';
+}
+
+$('#closeModal').addEventListener('click', closeVideo);
+vModal.addEventListener('click', e => { if (e.target === vModal) closeVideo(); });
+
+/* ---- Add-video panel ---- */
+const addPanel = $('#addPanel');
+$('#toggleAdd').addEventListener('click', () => {
+  addPanel.classList.toggle('open');
+  if (addPanel.classList.contains('open')) addPanel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+$('#cancelAdd').addEventListener('click', () => addPanel.classList.remove('open'));
+
+$('#videoForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const title = $('#vTitle').value.trim();
+  const url   = $('#vUrl').value.trim();
+  const loc   = $('#vLocation').value.trim();
+  const cat   = $('#vCat').value;
+  const desc  = $('#vDesc').value.trim();
+
+  if (!title || !url) { toast('Please add a title and video URL'); return; }
+  try { new URL(url); } catch { toast('That video URL doesn\'t look right'); return; }
+
+  const posters = ['poster-1','poster-2','poster-3','poster-4','poster-5','poster-6'];
+  const newVid = {
+    id: 'u' + Date.now(),
+    title, url,
+    location: loc || 'Gauteng',
+    cat,
+    desc,
+    duration: 'New',
+    poster: posters[Math.floor(Math.random() * posters.length)],
+    custom: true
+  };
+
+  videos.unshift(newVid);
+  store.set('as_videos', videos.filter(v => v.custom));
+  renderVideos();
+
+  const note = $('#videoNote');
+  note.classList.add('show');
+  note.querySelector('span').textContent = `"${title}" is now live in the gallery.`;
+
+  e.target.reset();
+  setTimeout(() => {
+    note.classList.remove('show');
+    addPanel.classList.remove('open');
+  }, 2600);
+
+  toast('Video published to gallery', 'play');
+});
+
+renderVideos();
+
+/* ═══════════════════════════════════════════
+   4. PRODUCTS
+   ═══════════════════════════════════════════ */
+const MEMBRANE_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>`;
+const LIQUID_SVG   = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5s-7 8.2-7 12.5a7 7 0 0 0 14 0c0-4.3-7-12.5-7-12.5z"/></svg>`;
+const PRIMER_SVG   = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8v3H8z"/><path d="M9 5v3.5L5.5 13A4 4 0 0 0 9 19h6a4 4 0 0 0 3.5-6L15 8.5V5"/><path d="M7 15h10"/></svg>`;
+const TOOL_SVG     = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 21H3l7.3-9.7a4 4 0 0 1 4.4-5z"/><circle cx="17" cy="7" r="1"/></svg>`;
+
+const PRODUCTS = [
+  { id:'p1', name:'Insutech APP Torch-On Membrane 4mm', spec:'10m² roll · Polyester reinforced · Mineral finish', price:1499, was:1720, brand:'Insutech', cat:'Membrane', tag:'Best Seller', hot:true, stock:'In stock', ico:MEMBRANE_SVG, img:'pimg-1' },
+  { id:'p2', name:'APP Torch-On Membrane 3mm', spec:'10m² roll · Standard sand finish · SANS 10021', price:1149, was:1290, brand:'AquaShield', cat:'Membrane', tag:'Trade', hot:false, stock:'In stock', ico:MEMBRANE_SVG, img:'pimg-2' },
+  { id:'p3', name:'Insutech Liquid Rubber 20kg', spec:'Seamless elastomeric coating · 2-coat system', price:2450, was:2790, brand:'Insutech', cat:'Liquid', tag:'Premium', hot:true, stock:'In stock', ico:LIQUID_SVG, img:'pimg-3' },
+  { id:'p4', name:'Insutech Bituminous Primer 20L', spec:'Penetrating primer · 4–6 m²/L coverage', price:899, was:0, brand:'Insutech', cat:'Primer', tag:'', hot:false, stock:'In stock', ico:PRIMER_SVG, img:'pimg-4' },
+  { id:'p5', name:'Insutech Acrylic Roof Coating 20L', spec:'UV-stable reflective white · IBR & tile', price:1299, was:1450, brand:'Insutech', cat:'Liquid', tag:'UV Guard', hot:false, stock:'In stock', ico:LIQUID_SVG, img:'pimg-5' },
+  { id:'p6', name:'Insutech PU Sealant 600ml', spec:'Gun-grade polyurethane · Movement joints', price:189, was:0, brand:'Insutech', cat:'Accessories', tag:'', hot:false, stock:'Low stock', ico:TOOL_SVG, img:'pimg-6' },
+  { id:'p7', name:'Butyl Flashing Tape 100mm × 10m', spec:'Self-adhesive · Parapets, sills, laps', price:349, was:0, brand:'AquaShield', cat:'Accessories', tag:'', hot:false, stock:'In stock', ico:TOOL_SVG, img:'pimg-7' },
+  { id:'p8', name:'Insutech Cementitious Tanking 25kg', spec:'2-component basement slurry · Negative side', price:1050, was:1180, brand:'Insutech', cat:'Liquid', tag:'Basements', hot:false, stock:'In stock', ico:LIQUID_SVG, img:'pimg-8' }
+];
+
+let prodFilter = 'All';
+
+function renderProducts() {
+  const list = prodFilter === 'All' ? PRODUCTS : PRODUCTS.filter(p => p.cat === prodFilter);
+  $('#prodGrid').innerHTML = list.map(p => `
+    <article class="prod">
+      <div class="pimg ${p.img}">
+        ${p.tag ? `<span class="ptag ${p.hot ? 'hot' : ''}">${esc(p.tag)}</span>` : ''}
+        ${p.ico}
+        <span class="pbrand">${esc(p.brand)}</span>
+      </div>
+      <div class="pbody">
+        <h3>${esc(p.name)}</h3>
+        <p class="spec">${esc(p.spec)}</p>
+        <div class="price">
+          <b>${money(p.price)}</b>
+          ${p.was ? `<s>${money(p.was)}</s>` : ''}
+          <small>/ unit</small>
+        </div>
+        <p class="pstock ${p.stock === 'Low stock' ? 'low' : ''}">
+          <span class="dot"></span>${esc(p.stock)}
+        </p>
+        <button class="btn btn-dark btn-block" data-add="${p.id}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+          </svg>
+          Add to Cart
+        </button>
+      </div>
+    </article>
+  `).join('');
+}
+
+$('#prodFilters').addEventListener('click', e => {
+  const chip = e.target.closest('.chip');
+  if (!chip) return;
+  $$('#prodFilters .chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  prodFilter = chip.dataset.cat;
+  renderProducts();
+});
+
+$('#prodGrid').addEventListener('click', e => {
+  const btn = e.target.closest('[data-add]');
+  if (!btn) return;
+  addToCart(btn.dataset.add);
+});
+
+renderProducts();
+
+/* ═══════════════════════════════════════════
+   5. CART
+   ═══════════════════════════════════════════ */
+let cart = store.get('as_cart', []);
+const WHATSAPP_NUMBER = '27820000000';
+const FREE_SHIPPING_FROM = 5000;
+const SHIPPING_FEE = 450;
+
+function saveCart() { store.set('as_cart', cart); }
+
+function addToCart(id) {
+  const p = PRODUCTS.find(x => x.id === id);
+  if (!p) return;
+  const line = cart.find(l => l.id === id);
+  if (line) line.qty++;
+  else cart.push({ id, qty: 1 });
+  saveCart();
+  renderCart();
+  toast(`${p.name.split(' ').slice(0, 3).join(' ')}… added to cart`, 'cart');
+  bumpCart();
+}
+
+function bumpCart() {
+  const b = $('#cartCount');
+  b.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.5)' }, { transform: 'scale(1)' }],
+            { duration: 380, easing: 'ease-out' });
+}
+
+function renderCart() {
+  const body = $('#cartBody');
+  const foot = $('#cartFoot');
+  const count = cart.reduce((s, l) => s + l.qty, 0);
+
+  $('#cartCount').textContent = count;
+  $('#drawerCount').textContent = count;
+
+  if (!cart.length) {
+    body.innerHTML = `
+      <div class="cart-empty">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/>
+        </svg>
+        <h4>Your cart is empty</h4>
+        <p>Add APP membrane, Insutech liquid rubber or primers to get started.</p>
+        <button class="btn btn-primary" id="goShop">Browse Materials</button>
+      </div>`;
+    foot.style.display = 'none';
+    const gs = $('#goShop');
+    if (gs) gs.addEventListener('click', () => { closeCart(); $('#products').scrollIntoView({ behavior: 'smooth' }); });
+    return;
+  }
+
+  body.innerHTML = cart.map(l => {
+    const p = PRODUCTS.find(x => x.id === l.id);
+    if (!p) return '';
+    return `
+      <div class="citem">
+        <div class="citem-img ${p.img}">${p.ico}</div>
+        <div class="citem-info">
+          <h4>${esc(p.name)}</h4>
+          <p class="cp">${money(p.price)} each</p>
+          <div class="qty">
+            <button data-dec="${p.id}" aria-label="Decrease">−</button>
+            <span>${l.qty}</span>
+            <button data-inc="${p.id}" aria-label="Increase">+</button>
+          </div>
+        </div>
+        <div class="citem-right">
+          <b>${money(p.price * l.qty)}</b>
+          <button class="rm" data-rm="${p.id}">Remove</button>
+        </div>
+      </div>`;
+  }).join('');
+
+  const subtotal = cart.reduce((s, l) => {
+    const p = PRODUCTS.find(x => x.id === l.id);
+    return s + (p ? p.price * l.qty : 0);
+  }, 0);
+  const shipping = subtotal >= FREE_SHIPPING_FROM ? 0 : SHIPPING_FEE;
+
+  $('#subtotal').textContent = money(subtotal);
+  $('#shipping').textContent = shipping === 0 ? 'FREE' : money(shipping);
+  $('#grandTotal').textContent = money(subtotal + shipping);
+  foot.style.display = 'block';
+
+  body.querySelectorAll('[data-inc]').forEach(b => b.onclick = () => {
+    const l = cart.find(x => x.id === b.dataset.inc); if (l) { l.qty++; saveCart(); renderCart(); }
+  });
+  body.querySelectorAll('[data-dec]').forEach(b => b.onclick = () => {
+    const l = cart.find(x => x.id === b.dataset.dec);
+    if (l) { l.qty--; if (l.qty <= 0) cart = cart.filter(x => x.id !== l.id); saveCart(); renderCart(); }
+  });
+  body.querySelectorAll('[data-rm]').forEach(b => b.onclick = () => {
+    cart = cart.filter(x => x.id !== b.dataset.rm);
+    saveCart(); renderCart(); toast('Item removed from cart');
+  });
+}
+
+/* Drawer open / close */
+const overlay = $('#overlay');
+const drawer = $('#drawer');
+
+function openCart() { drawer.classList.add('show'); overlay.classList.add('show'); document.body.style.overflow = 'hidden'; }
+function closeCart() { drawer.classList.remove('show'); overlay.classList.remove('show'); document.body.style.overflow = ''; }
+
+$('#cartBtn').addEventListener('click', openCart);
+$('#closeCart').addEventListener('click', closeCart);
+overlay.addEventListener('click', closeCart);
+
+$('#clearCart').addEventListener('click', () => {
+  if (!cart.length) return;
+  cart = []; saveCart(); renderCart(); toast('Cart cleared');
+});
+
+$('#checkoutBtn').addEventListener('click', () => {
+  if (!cart.length) return;
+  const subtotal = cart.reduce((s, l) => {
+    const p = PRODUCTS.find(x => x.id === l.id);
+    return s + (p ? p.price * l.qty : 0);
+  }, 0);
+  const shipping = subtotal >= FREE_SHIPPING_FROM ? 0 : SHIPPING_FEE;
+
+  const lines = cart.map(l => {
+    const p = PRODUCTS.find(x => x.id === l.id);
+    return `• ${p.name} × ${l.qty} — ${money(p.price * l.qty)}`;
+  });
+
+  const msg = [
+    '*NEW MATERIAL ORDER — AquaShield*',
+    '',
+    ...lines,
+    '',
+    `Subtotal: ${money(subtotal)}`,
+    `Delivery: ${shipping === 0 ? 'FREE' : money(shipping)}`,
+    `*TOTAL: ${money(subtotal + shipping)}*`,
+    '',
+    'Please confirm availability and delivery lead time.'
+  ].join('\n');
+
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+  toast('Opening WhatsApp with your order…', 'cart');
+});
+
+renderCart();
+
+/* ═══════════════════════════════════════════
+   6. QUOTE FORM
+   ═══════════════════════════════════════════ */
+$('#quoteForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name  = $('#qName').value.trim();
+  const phone = $('#qPhone').value.trim();
+  const email = $('#qEmail').value.trim();
+  const msg   = $('#qMsg').value.trim();
+
+  if (!name || !phone || !email || !msg) {
+    toast('Please complete all required fields');
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    toast('Please enter a valid email address');
+    return;
+  }
+
+  const note = $('#quoteNote');
+  note.classList.add('show');
+  note.querySelector('span').textContent =
+    `Thanks ${name.split(' ')[0]}! Your request for "${$('#qService').value}" has been logged. Our estimator will call ${phone} within one working day.`;
+
+  toast('Quote request sent — we\'ll be in touch!');
+  e.target.reset();
+  setTimeout(() => note.classList.remove('show'), 9000);
+});
+
+/* ═══════════════════════════════════════════
+   7. ESC KEY HANDLING
+   ═══════════════════════════════════════════ */
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  if (vModal.classList.contains('show')) closeVideo();
+  if (drawer.classList.contains('show')) closeCart();
+  navLinks.classList.remove('open');
+});
+</script>
+</body>
+</html>
